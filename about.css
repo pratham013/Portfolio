@@ -78,7 +78,7 @@
     color: #ededed;
 }
 
-/* Fun Facts Section */
+/* About Me Section */
 .fun-facts {
     background: #1c2b36;
     width: 100%;
@@ -105,27 +105,21 @@
     text-transform: uppercase;
 }
 
-.fun-facts-item, .fun-facts-item2 {
+.fun-facts-item {
     background: #081b29;
     margin-bottom: 10px; /* Reduced from 15px */
     padding: 15px; /* Slightly reduced from 18px */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 900px;
 }
 
-.fun-facts-item h3, .fun-facts-item2 h3 {
+.fun-facts h3 {
     font-size: 26px;
     color: deepskyblue;
     margin-bottom: 5px; /* Reduced from 6px */
 }
 
-.fun-facts-item p {
-    font-size: 18px;
-    color: #ededed;
-}
-
-.fun-facts-item2 li {
+.fun-facts p {
     font-size: 16px;
     color: #ededed;
 }
@@ -175,7 +169,7 @@
 
 .navbar a:hover,
 .navbar a.active {
-    color: skyblue;
+    color: deepskyblue;
 }
 
 /* Ensure background covers entire page */

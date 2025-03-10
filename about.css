@@ -1,0 +1,205 @@
+/* About Page Styles */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 70vh;
+    background: #081b29;
+    color: white;
+    padding: 20px 10%; /* Reduced from 30px */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 10px; /* Reduced from 20px */
+}
+
+.about-content h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: deepskyblue;
+    margin-bottom: 5px; /* Reduced from 10px */
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.3; /* Slightly reduced from 1.4 */
+    color: #ededed;
+}
+
+/* About Me Section */
+.about-me {
+    background: #1c2b36;
+    width: 100%;
+    padding: 20px 10%; /* Reduced from 30px */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.about-me-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-me h1 {
+    font-size: 34px;
+    text-align: center;
+    color: deepskyblue;
+    margin-bottom: 10px; /* Reduced from 15px */
+    text-transform: uppercase;
+}
+
+.about-item {
+    background: #081b29;
+    margin-bottom: 10px; /* Reduced from 15px */
+    padding: 15px; /* Slightly reduced from 18px */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-item h3 {
+    font-size: 26px;
+    color: deepskyblue;
+    margin-bottom: 5px; /* Reduced from 6px */
+}
+
+.about-item p {
+    font-size: 16px;
+    color: #ededed;
+}
+
+/* Fun Facts Section */
+.fun-facts {
+    background: #1c2b36;
+    width: 100%;
+    padding: 20px 10%; /* Reduced from 30px */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.fun-facts-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fun-facts h1 {
+    font-size: 34px;
+    text-align: center;
+    color: deepskyblue;
+    margin-bottom: 10px; /* Reduced from 15px */
+    text-transform: uppercase;
+}
+
+.fun-facts-item, .fun-facts-item2 {
+    background: #081b29;
+    margin-bottom: 10px; /* Reduced from 15px */
+    padding: 15px; /* Slightly reduced from 18px */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+}
+
+.fun-facts-item h3, .fun-facts-item2 h3 {
+    font-size: 26px;
+    color: deepskyblue;
+    margin-bottom: 5px; /* Reduced from 6px */
+}
+
+.fun-facts-item p {
+    font-size: 18px;
+    color: #ededed;
+}
+
+.fun-facts-item2 li {
+    font-size: 16px;
+    color: #ededed;
+}
+
+/* Navbar Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%; /* Reduced from 15px */
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: skyblue;
+}
+
+/* Ensure background covers entire page */
+body {
+    background: #081b29;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+.footer {
+    background: #081b29;
+    text-align: center;
+    padding: 20px;
+    color: #ededed;
+}
+
+.footer p {
+    font-size: 16px;
+}

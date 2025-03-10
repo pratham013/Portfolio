@@ -1,0 +1,228 @@
+/* Import font if needed */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: skyblue;
+}
+
+/* Projects Section */
+.projects {
+    padding: 100px 10%;
+}
+
+.projects-content {
+    text-align: center;
+}
+
+.projects-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+}
+
+.projects-content p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #ededed;
+}
+
+.project-item {
+    background: #1c2b36;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: deepskyblue;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #ededed;
+    margin-bottom: 20px;
+}
+
+.project-item .btn {
+    width: 150px;
+    padding: 10px;
+    background: deepskyblue;
+    border: 2px solid deepskyblue;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.project-item .btn:hover {
+    background: deepskyblue;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+.footer {
+    background: #081b29;
+    text-align: center;
+    padding: 20px;
+    color: #ededed;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+/* Certificates Section */
+.certificates {
+    padding: 50px 10%;
+    background: #081b29;
+}
+
+.certificates-content {
+    text-align: center;
+}
+
+.certificates-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+}
+
+.certificates-content p {
+    font-size: 18px;
+    margin: 20px 0 40px;
+    color: #ededed;
+}
+
+/* Remove the grid and make it more like your projects layout */
+.certificate-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.certificate-item {
+    background: #1c2b36;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificate-item img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.certificate-item p {
+    font-size: 24px;
+    color: deepskyblue;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.certificate-item .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    padding: 12px 20px;
+    background: deepskyblue; /* Matching the blue from your projects */
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.certificate-item .btn:hover {
+    background: #2e90e5;
+    transform: translateY(-2px);
+}
+
+.certificate-item .btn i {
+    margin-right: 8px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .certificate-item p {
+        font-size: 20px;
+    }
+    
+    .certificate-item .btn {
+        width: 160px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-item {
+        padding: 20px;
+    }
+    
+    .certificate-item img {
+        width: 200px;
+    }
+}

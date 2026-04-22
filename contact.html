@@ -1,48 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Contact Me</title>
-     <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Pratham Chauhan</title>
+    <meta name="description" content="Contact Pratham Chauhan for internships, collaborations, and professional opportunities.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <header class="header">
-        <a href="#" class="logo">Pratham Chauhan</a>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="Project.html">Projects</a>
-           <a href="about.html">About</a>
-           <a href="contact.html">Contact Me</a>
-
-        </nav>
-     </header>
-
-    <section class="contact">
-        <div class="contact-container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out! Fill in the form below and I'll get back to you as soon as possible.</p>
-
-            <form action="https://formspree.io/f/xkgobdwr" method="POST">
-                <div class="input-box">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="input-box">
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="input-box">
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+    <header class="site-header">
+        <div class="container nav-shell">
+            <a href="index.html" class="brand">Pratham Chauhan</a>
+            <nav class="navbar" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a href="Project.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <footer class="footer">
-        <p>&copy; 2025 Pratham Chauhan. All rights reserved.</p>
+    <main class="page-shell">
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-panel">
+                    <p class="eyebrow">Contact</p>
+                    <h1>Let’s connect about internships, projects, or opportunities to collaborate.</h1>
+                    <p>
+                        I am looking for opportunities where I can keep growing across software, data, and cloud-focused work.
+                        If you think there is a fit, I would be glad to connect.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-shell">
+            <div class="container contact-grid">
+                <article class="contact-card">
+                    <p class="card-kicker">Direct</p>
+                    <h2>Best ways to reach me</h2>
+                    <ul class="contact-list">
+                        <li>Email: <a class="inline-link" href="mailto:chauhanpratham013@gmail.com">chauhanpratham013@gmail.com</a></li>
+                        <li>GitHub: <a class="inline-link" href="https://github.com/pratham013" target="_blank" rel="noreferrer">github.com/pratham013</a></li>
+                        <li>LinkedIn: <a class="inline-link" href="https://www.linkedin.com/in/pratham-chauhan-19003b303" target="_blank" rel="noreferrer">linkedin.com/in/pratham-chauhan-19003b303</a></li>
+                    </ul>
+                    <div class="social-row">
+                        <a href="https://www.linkedin.com/in/pratham-chauhan-19003b303" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/pratham013" target="_blank" rel="noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:chauhanpratham013@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="contact-card contact-form-card">
+                    <p class="card-kicker">Message Me</p>
+                    <h2>Send a note</h2>
+                    <p>
+                        Share a role, project, collaboration idea, or just say hello. I will respond as soon as I can.
+                    </p>
+                    <form action="https://formspree.io/f/xkgobdwr" method="POST">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me a little about the opportunity or project." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-shell">
+            <p>&copy; 2026 Pratham Chauhan. Built to keep improving.</p>
+            <a href="mailto:chauhanpratham013@gmail.com">chauhanpratham013@gmail.com</a>
+        </div>
     </footer>
-
 </body>
 </html>
